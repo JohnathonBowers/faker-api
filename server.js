@@ -46,8 +46,7 @@ app.get("/api/companies/new", (req, res) => {
 
 // GET route that returns both a new user and a new company
 app.get("/api/user/company", (req, res) => {
-    res.json( newFakeUser );
-    res.json( newFakeCompany );
+    res.json( {newFakeUser, newFakeCompany} );
 });
 
 
